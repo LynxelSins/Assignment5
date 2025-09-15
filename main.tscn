@@ -1,16 +1,44 @@
-[gd_scene load_steps=14 format=3 uid="uid://cmsg3px7gww5a"]
+[gd_scene load_steps=37 format=3 uid="uid://cmsg3px7gww5a"]
 
 [ext_resource type="Script" uid="uid://cu6i82oi8lc74" path="res://main.gd" id="1_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://bpwgj13fps8f2" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://clrepbofjvfw0" path="res://mob.tscn" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://c7hjh13ymexuy" path="res://art/fbd00f173ca22bc24d75664ec469e497.jpg" id="3_7mycd"]
 [ext_resource type="FontFile" uid="uid://baqpkjm3wv6i7" path="res://fonts/Montserrat-Medium.ttf" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://dl4m7un7bq2fj" path="res://art/Fountain.glb" id="4_272bh"]
+[ext_resource type="PackedScene" uid="uid://cfcr8xv6dx7wh" path="res://art/Bench.glb" id="5_074og"]
+[ext_resource type="PackedScene" uid="uid://lujy831rpx5i" path="res://art/Grass A.glb" id="5_kek77"]
 [ext_resource type="Script" uid="uid://uef285ohe7j0" path="res://score_label.gd" id="5_lquwl"]
+[ext_resource type="PackedScene" uid="uid://bv20aligrkko7" path="res://art/Cobble Stones Large.glb" id="6_cegan"]
+[ext_resource type="PackedScene" uid="uid://dkkup4byr471j" path="res://art/Floor Grass Sliced I.glb" id="7_82xsv"]
+[ext_resource type="PackedScene" uid="uid://dhhqlen567cwu" path="res://art/Floor Grass Sliced H.glb" id="8_getpj"]
+[ext_resource type="PackedScene" uid="uid://xebg50dlovnl" path="res://art/Floor Grass Sliced G.glb" id="9_ryguw"]
+[ext_resource type="PackedScene" uid="uid://dg4cautwv1g1" path="res://art/Floor Grass Sliced F.glb" id="10_d13ii"]
+[ext_resource type="PackedScene" uid="uid://ciw24lacu12u5" path="res://art/Flower A.glb" id="14_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://dvfn2ky5bslai" path="res://art/Flower B.glb" id="15_0odxb"]
+[ext_resource type="PackedScene" uid="uid://dd7ny644ge7nk" path="res://art/Hedge Straight.glb" id="16_d13ii"]
+[ext_resource type="PackedScene" uid="uid://b102e2tfvwqqb" path="res://art/Street Lantern.glb" id="17_1u8w0"]
+[ext_resource type="PackedScene" uid="uid://c5he6bb2hvabh" path="res://art/Grass B.glb" id="17_lswn8"]
+[ext_resource type="PackedScene" uid="uid://bsmxwasjmhrqo" path="res://art/Trashcan.glb" id="18_0odxb"]
+[ext_resource type="PackedScene" uid="uid://clhejcpc0s3g3" path="res://art/Hedge Straight Long.glb" id="18_a6jrf"]
+[ext_resource type="PackedScene" uid="uid://bvokl4y0frhcn" path="res://art/Tree Large.glb" id="19_lswn8"]
+[ext_resource type="PackedScene" uid="uid://dmqg26kfavtfe" path="res://art/Tree.glb" id="20_a6jrf"]
+[ext_resource type="PackedScene" uid="uid://c7kaf75qukyit" path="res://art/Cobble Stones.glb" id="21_0odxb"]
+[ext_resource type="PackedScene" uid="uid://rq4jix5ydd0r" path="res://art/Bush.glb" id="25_lswn8"]
+[ext_resource type="FontFile" uid="uid://4rud5cr74183" path="res://fonts/THSarabunNew/THSarabunNew.ttf" id="26_lswn8"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_7dm0k"]
 size = Vector3(60, 2, 60)
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_272bh"]
+albedo_texture = ExtResource("3_7mycd")
+
 [sub_resource type="BoxMesh" id="BoxMesh_ig7tw"]
 size = Vector3(60, 2, 60)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7mycd"]
+albedo_color = Color(1, 1, 0.823529, 1)
+albedo_texture = ExtResource("3_7mycd")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ig7tw"]
 albedo_color = Color(1, 0.835294, 0.235294, 1)
@@ -53,7 +81,114 @@ collision_mask = 0
 shape = SubResource("BoxShape3D_7dm0k")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
+material_override = SubResource("StandardMaterial3D_272bh")
 mesh = SubResource("BoxMesh_ig7tw")
+surface_material_override/0 = SubResource("StandardMaterial3D_7mycd")
+
+[node name="Root Scene8" parent="Ground" instance=ExtResource("14_1u8w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.98757, 1.02, 3.00595)
+
+[node name="Root Scene9" parent="Ground" instance=ExtResource("15_0odxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.32306, 1.02, -8.4972)
+
+[node name="Root Scene10" parent="Ground" instance=ExtResource("5_kek77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.974195, 1.04007, -9.39088)
+
+[node name="Root Scene11" parent="Ground" instance=ExtResource("17_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.59383, 1.04152, -9.83757)
+
+[node name="Root Scene12" parent="Ground" instance=ExtResource("18_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.10378, 1.00591, -12.5172)
+
+[node name="Root Scene13" parent="Ground" instance=ExtResource("18_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.9855, 1.00591, -12.1141)
+
+[node name="Root Scene" parent="Ground" instance=ExtResource("4_272bh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0162601, 0.953946, -11.4631)
+
+[node name="Root Scene2" parent="Ground" instance=ExtResource("5_074og")]
+transform = Transform3D(0.454877, 0, -0.890554, 0, 1, 0, 0.890554, 0, 0.454877, -2.85547, 1, -9.57647)
+
+[node name="Root Scene3" parent="Ground" instance=ExtResource("6_cegan")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.30864, 1.1, -9.71096)
+
+[node name="Root Scene4" parent="Ground" instance=ExtResource("7_82xsv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.93142, 1.5, 6.63086)
+
+[node name="Root Scene5" parent="Ground" instance=ExtResource("8_getpj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.52932, 1.5, -11.7374)
+
+[node name="Root Scene6" parent="Ground" instance=ExtResource("9_ryguw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.20417, 1.5, 6.59945)
+
+[node name="Root Scene7" parent="Ground" instance=ExtResource("10_d13ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3316, 1.5, -12.6331)
+
+[node name="Root Scene14" parent="Ground" instance=ExtResource("16_d13ii")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.19065, 0.999999, 6.04435)
+
+[node name="Root Scene15" parent="Ground" instance=ExtResource("17_1u8w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.96828, 1.2, -10.766)
+
+[node name="Root Scene16" parent="Ground" instance=ExtResource("17_1u8w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.99562, 1.2, 6.90791)
+
+[node name="Root Scene17" parent="Ground" instance=ExtResource("18_0odxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.86992, 1, -11.1619)
+
+[node name="Root Scene18" parent="Ground" instance=ExtResource("19_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.89072, 1.2, -13.8992)
+
+[node name="Root Scene19" parent="Ground" instance=ExtResource("19_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.1316, 1.2, 11.2402)
+
+[node name="Root Scene20" parent="Ground" instance=ExtResource("19_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4922, 1.2, 10.4065)
+
+[node name="Root Scene21" parent="Ground" instance=ExtResource("19_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.9292, 1.2, 8.55626)
+
+[node name="Root Scene22" parent="Ground" instance=ExtResource("20_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.5925, 1.2, -9.04047)
+
+[node name="Root Scene23" parent="Ground" instance=ExtResource("20_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.3316, 1.2, -6.58071)
+
+[node name="Root Scene24" parent="Ground" instance=ExtResource("20_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.64715, 1.2, 14.0652)
+
+[node name="Root Scene25" parent="Ground" instance=ExtResource("20_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.6301, 1.2, -9.2706)
+
+[node name="Root Scene26" parent="Ground" instance=ExtResource("20_a6jrf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.3503, 1.2, -12.1173)
+
+[node name="Root Scene27" parent="Ground" instance=ExtResource("19_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.7692, 1.2, -6.02418)
+
+[node name="Root Scene28" parent="Ground" instance=ExtResource("19_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.59857, 1.2, -9.69751)
+
+[node name="Root Scene29" parent="Ground" instance=ExtResource("5_kek77")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.32174, 1.04007, 3.62211)
+
+[node name="Root Scene30" parent="Ground" instance=ExtResource("17_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.26234, 1.04152, -2.12011)
+
+[node name="Root Scene31" parent="Ground" instance=ExtResource("14_1u8w0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.85763, 1.02, -1.14818)
+
+[node name="Root Scene32" parent="Ground" instance=ExtResource("15_0odxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.5006, 1.02, 3.69905)
+
+[node name="Root Scene33" parent="Ground" instance=ExtResource("8_getpj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.81679, 1.5, -0.480381)
+
+[node name="Root Scene34" parent="Ground" instance=ExtResource("21_0odxb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.41118, 1.1, 0.12254)
+
+[node name="Root Scene35" parent="Ground" instance=ExtResource("6_cegan")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.00194, 1.1, 5.17244)
 
 [node name="Player" parent="." instance=ExtResource("1_ig7tw")]
 
@@ -61,7 +196,7 @@ mesh = SubResource("BoxMesh_ig7tw")
 transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 0, 0)
 
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 19)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0529518, -0.0219297, 19.0155)
 projection = 1
 size = 19.0
 
@@ -87,13 +222,14 @@ mesh = SubResource("CylinderMesh_ig7tw")
 curve = SubResource("Curve3D_ig7tw")
 
 [node name="SpawnLocation" type="PathFollow3D" parent="SpawnPath"]
-transform = Transform3D(0.016075, 0, -0.999869, 0, 1, 0, 0.999869, 0, 0.016075, -16.269, 0, -16.0011)
+transform = Transform3D(0.0160728, 0, -0.999869, 0, 1, 0, 0.999869, 0, 0.0160728, -16.269, 0, -16.0011)
 
 [node name="MobTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
 
 [node name="UserInterface" type="Control" parent="."]
+visible = false
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -140,6 +276,81 @@ theme = SubResource("Theme_272bh")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
 text = "Press Enter to retry."
+
+[node name="Root Scene" parent="." instance=ExtResource("25_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.52734, 1.22835e-07, -2.86214)
+
+[node name="Root Scene2" parent="." instance=ExtResource("25_lswn8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.97909, 1.22835e-07, 3.39426)
+
+[node name="Menugame" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Overay" type="ColorRect" parent="Menugame"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 679.0
+offset_bottom = 500.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_7mycd")
+color = Color(0, 0, 0, 0.407843)
+metadata/_edit_group_ = true
+
+[node name="GameName" type="Label" parent="Menugame/Overay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -62.5
+offset_top = -118.0
+offset_right = 63.5
+offset_bottom = 14.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_272bh")
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 5
+theme_override_font_sizes/font_size = 80
+text = "OIIA OIIA jump!"
+
+[node name="Button" type="Button" parent="Menugame/Overay"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -44.5
+offset_top = 44.0
+offset_right = 47.5
+offset_bottom = 97.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 32
+text = "Start!"
+
+[node name="Myname" type="Label" parent="Menugame/Overay"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -212.0
+offset_top = -22.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("26_lswn8")
+theme_override_font_sizes/font_size = 16
+text = "673380275-5 ปภาวรินทร์ นาเมืองรักษ์ Section1"
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]

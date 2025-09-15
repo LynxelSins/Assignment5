@@ -28,6 +28,8 @@ func _on_mob_timer_timeout():
 func _on_player_hit():
 	$MobTimer.stop()
 	$UserInterface/Retry.show()
+	
+	
 
 func _unhandled_input(event):
 	if event.is_action_pressed("ui_ok") and $UserInterface/Retry.visible:

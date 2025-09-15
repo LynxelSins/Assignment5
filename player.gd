@@ -91,3 +91,4 @@ func die():
 
 func _on_mob_detector_body_entered(body):
 	die()
+	
