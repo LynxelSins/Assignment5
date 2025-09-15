@@ -1,15 +1,19 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1757957921
+::res://::1757959399
 default_bus_layout.tres::AudioBusLayout::-1::1606408168::0::1::::<><><>0<>0<><>::
 default_env.tres::Environment::-1::1606467342::0::1::::<><><>0<>0<><>::
+export_presets.cfg::TextFile::-1::1757959399::0::1::::<><><>0<>0<><>::
 icon.png::CompressedTexture2D::4234441447305826414::1605962920::1757954491::1::::<><><>0<>0<>146b82f4774402560713026cd82ed6a0<>res://.godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex::
-main.gd::GDScript::6241160057829430093::1757956166::0::1::::<>Node<><>0<>0<><>::
-main.tscn::PackedScene::5652681419645199012::1757957921::0::1::::<><><>0<>0<><>::uid://cu6i82oi8lc74::::res://main.gd<>uid://bpwgj13fps8f2::::res://player.tscn<>uid://clrepbofjvfw0::::res://mob.tscn<>uid://c7hjh13ymexuy::::res://art/fbd00f173ca22bc24d75664ec469e497.jpg<>uid://baqpkjm3wv6i7::::res://fonts/Montserrat-Medium.ttf<>uid://dl4m7un7bq2fj::::res://art/Fountain.glb<>uid://cfcr8xv6dx7wh::::res://art/Bench.glb<>uid://lujy831rpx5i::::res://art/Grass A.glb<>uid://uef285ohe7j0::::res://score_label.gd<>uid://bv20aligrkko7::::res://art/Cobble Stones Large.glb<>uid://dkkup4byr471j::::res://art/Floor Grass Sliced I.glb<>uid://dhhqlen567cwu::::res://art/Floor Grass Sliced H.glb<>uid://xebg50dlovnl::::res://art/Floor Grass Sliced G.glb<>uid://dg4cautwv1g1::::res://art/Floor Grass Sliced F.glb<>uid://ciw24lacu12u5::::res://art/Flower A.glb<>uid://dvfn2ky5bslai::::res://art/Flower B.glb<>uid://dd7ny644ge7nk::::res://art/Hedge Straight.glb<>uid://b102e2tfvwqqb::::res://art/Street Lantern.glb<>uid://c5he6bb2hvabh::::res://art/Grass B.glb<>uid://bsmxwasjmhrqo::::res://art/Trashcan.glb<>uid://clhejcpc0s3g3::::res://art/Hedge Straight Long.glb<>uid://bvokl4y0frhcn::::res://art/Tree Large.glb<>uid://dmqg26kfavtfe::::res://art/Tree.glb<>uid://c7kaf75qukyit::::res://art/Cobble Stones.glb<>uid://rq4jix5ydd0r::::res://art/Bush.glb
+index.apple-touch-icon.png::CompressedTexture2D::963156801045277452::1757959399::1757959811::1::::<><><>0<>0<>943ed541be58ce9d85e979075a995fbf<>res://.godot/imported/index.apple-touch-icon.png-8085a11cc297d91deb55511843765958.ctex::
+index.icon.png::CompressedTexture2D::4386380845362708319::1757959399::1757959811::1::::<><><>0<>0<>8b9ab5954b5c0ff10751fde601512832<>res://.godot/imported/index.icon.png-5665fad188e88d1e882500a4376bfe02.ctex::
+index.png::CompressedTexture2D::4471460541377116255::1757959399::1757959811::1::::<><><>0<>0<>6ad740b4ccb765549e6d18b1ef0edccb<>res://.godot/imported/index.png-5122033cac747157decad52589e2295c.ctex::
+main.gd::GDScript::6241160057829430093::1757959164::0::1::::<>Node<><>0<>0<><>::
+main.tscn::PackedScene::5652681419645199012::1757959298::0::1::::<><><>0<>0<><>::uid://cu6i82oi8lc74::::res://main.gd<>uid://bpwgj13fps8f2::::res://player.tscn<>uid://clrepbofjvfw0::::res://mob.tscn<>uid://c7hjh13ymexuy::::res://art/fbd00f173ca22bc24d75664ec469e497.jpg<>uid://baqpkjm3wv6i7::::res://fonts/Montserrat-Medium.ttf<>uid://dl4m7un7bq2fj::::res://art/Fountain.glb<>uid://cfcr8xv6dx7wh::::res://art/Bench.glb<>uid://lujy831rpx5i::::res://art/Grass A.glb<>uid://uef285ohe7j0::::res://score_label.gd<>uid://bv20aligrkko7::::res://art/Cobble Stones Large.glb<>uid://dkkup4byr471j::::res://art/Floor Grass Sliced I.glb<>uid://dhhqlen567cwu::::res://art/Floor Grass Sliced H.glb<>uid://xebg50dlovnl::::res://art/Floor Grass Sliced G.glb<>uid://dg4cautwv1g1::::res://art/Floor Grass Sliced F.glb<>uid://ciw24lacu12u5::::res://art/Flower A.glb<>uid://dvfn2ky5bslai::::res://art/Flower B.glb<>uid://dd7ny644ge7nk::::res://art/Hedge Straight.glb<>uid://b102e2tfvwqqb::::res://art/Street Lantern.glb<>uid://c5he6bb2hvabh::::res://art/Grass B.glb<>uid://bsmxwasjmhrqo::::res://art/Trashcan.glb<>uid://clhejcpc0s3g3::::res://art/Hedge Straight Long.glb<>uid://bvokl4y0frhcn::::res://art/Tree Large.glb<>uid://dmqg26kfavtfe::::res://art/Tree.glb<>uid://c7kaf75qukyit::::res://art/Cobble Stones.glb<>uid://rq4jix5ydd0r::::res://art/Bush.glb<>uid://4rud5cr74183::::res://fonts/THSarabunNew/THSarabunNew.ttf
 mob.gd::GDScript::8743117330195639492::1757957616::0::1::::<>CharacterBody3D<><>0<>0<><>::
-mob.tscn::PackedScene::5580282798493861873::1757957618::0::1::::<><><>0<>0<><>::uid://crmh4pd667tmn::::res://art/mob.glb<>uid://dwth4n8v7wklw::::res://mob.gd<>uid://lo3odaxhrndp::::res://art/Frog.glb
-music_player.tscn::PackedScene::1630710547501658392::1757957618::0::1::::<><><>0<>0<><>::uid://c5ombvyo3uda1::::res://WW - OIIA OIIA Spinning Cat.mp3
+mob.tscn::PackedScene::5580282798493861873::1757959268::0::1::::<><><>0<>0<><>::uid://crmh4pd667tmn::::res://art/mob.glb<>uid://dwth4n8v7wklw::::res://mob.gd<>uid://lo3odaxhrndp::::res://art/Frog.glb
+music_player.tscn::PackedScene::1630710547501658392::1757959268::0::1::::<><><>0<>0<><>::uid://c5ombvyo3uda1::::res://WW - OIIA OIIA Spinning Cat.mp3
 player.gd::GDScript::8777153072369300575::1757956150::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::3485051432064240105::1757957618::0::1::::<><><>0<>0<><>::uid://8ih4dylme0px::::res://art/player.glb<>uid://dxbyotvl11xwh::::res://player.gd<>uid://tcrm6bxa6ps3::::res://art/Dingus the cat.glb
+player.tscn::PackedScene::3485051432064240105::1757959268::0::1::::<><><>0<>0<><>::uid://8ih4dylme0px::::res://art/player.glb<>uid://dxbyotvl11xwh::::res://player.gd<>uid://tcrm6bxa6ps3::::res://art/Dingus the cat.glb
 score_label.gd::GDScript::1412387965436483355::1757473312::0::1::::<>Label<><>0<>0<><>::
 WW - OIIA OIIA Spinning Cat.mp3::AudioStreamMP3::6908139495531074886::1757955636::1757955636::1::::<><><>0<>0<>b5ca17c4cef262ecd55a30e67119755e<>res://.godot/imported/WW - OIIA OIIA Spinning Cat.mp3-321619aedbde86cfe76041136fae6bf5.mp3str::
 ::res://art/::1757957089
@@ -85,7 +89,7 @@ Tree.glb::PackedScene::8034972381092602434::1757957080::1757957080::1::::<><><>0
 ::res://fonts/::1757958065
 LICENSE.txt::TextFile::-1::1605941652::0::1::::<><><>0<>0<><>::
 Montserrat-Medium.ttf::FontFile::2420379833138860468::1323655200::1757954491::1::::<><><>0<>0<>98fc8a33c3f53363a5a3ab0ed46a1176<>res://.godot/imported/Montserrat-Medium.ttf-e832861e4ad4110e172112dc430c04b0.fontdata::
-::res://fonts/THSarabunNew/::1757958065
+::res://fonts/THSarabunNew/::1757958070
 THSarabunNew Bold.ttf::FontFile::4396450983874253026::1573751342::1757958070::1::::<><><>0<>0<>cda58ef247ef21bfbd671bc3407a0561<>res://.godot/imported/THSarabunNew Bold.ttf-c806a955ae6dc369346b4570d37b6f66.fontdata::
 THSarabunNew BoldItalic.ttf::FontFile::6244505626800872955::1573751450::1757958070::1::::<><><>0<>0<>0495d15922e506ed93a7d13cdd2709b2<>res://.godot/imported/THSarabunNew BoldItalic.ttf-c3923aebe4ecf54dbdd2aaa4681ed10f.fontdata::
 THSarabunNew Italic.ttf::FontFile::8125212272495188005::1573751256::1757958070::1::::<><><>0<>0<>ffdd569ae39ed67606cdab703d01729a<>res://.godot/imported/THSarabunNew Italic.ttf-858b509141104deac98f253be23b7c30.fontdata::
