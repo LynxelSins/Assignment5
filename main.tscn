@@ -304,23 +304,20 @@ metadata/_edit_use_anchors_ = true
 
 [node name="GameName" type="Label" parent="Menugame/Overay"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 14
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 0.5
-offset_left = -329.0
-offset_top = -141.0
-offset_right = 330.0
+offset_top = -121.0
 offset_bottom = 62.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = SubResource("Theme_272bh")
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_constants/outline_size = 5
-theme_override_font_sizes/font_size = 89
+theme_override_font_sizes/font_size = 90
 text = "OIIA OIIA jump!"
-metadata/_edit_use_anchors_ = true
+horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="Menugame/Overay"]
 layout_mode = 1
@@ -329,33 +326,28 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -55.0
-offset_top = -243.0
-offset_right = 63.0
-offset_bottom = -177.0
+offset_left = -102.0
+offset_top = -179.0
+offset_right = 90.0
+offset_bottom = -75.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_font_sizes/font_size = 42
+theme_override_font_sizes/font_size = 70
 text = "Start!"
-metadata/_edit_use_anchors_ = true
 
 [node name="Myname" type="Label" parent="Menugame/Overay"]
 layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
+anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -272.0
-offset_top = -33.0
-offset_right = -7.0
-offset_bottom = -6.0
-grow_horizontal = 0
+offset_top = -63.0
+grow_horizontal = 2
 grow_vertical = 0
 theme_override_fonts/font = ExtResource("26_lswn8")
-theme_override_font_sizes/font_size = 24
+theme_override_font_sizes/font_size = 48
 text = "673380275-5 ปภาวรินทร์ นาเมืองรักษ์ Section1"
-metadata/_edit_use_anchors_ = true
+horizontal_alignment = 1
 
 [connection signal="hit" from="Player" to="." method="_on_player_hit"]
 [connection signal="timeout" from="MobTimer" to="." method="_on_mob_timer_timeout"]
