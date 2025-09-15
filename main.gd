@@ -3,8 +3,15 @@ extends Node
 @export var mob_scene: PackedScene
 
 func _ready():
+	$MobTimer.stop()
 	$UserInterface/Retry.hide()
+	$Menugame.show()   # แสดงเมนูเกมตอนเริ่ม
+	$UserInterface.hide() # ซ่อน UI ของเกมจนกว่าจะเริ่มเล่น
 
+func _on_start_button_pressed():
+	$Menugame.hide()        # ซ่อนเมนูเกม
+	$UserInterface.show()   # แสดง UI เกม
+	$MobTimer.start()       # เริ่ม spawn มอนสเตอร์ หรือเริ่มเกม
 
 func _on_mob_timer_timeout():
 	# Create a new instance of the Mob scene.
